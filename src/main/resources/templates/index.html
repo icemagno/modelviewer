@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html manifest="">
+
+<head th:insert="~{head}"></head>
+
+<body class="skin-black layout-top-nav sidebar-collapse" style="height: auto; min-height: 100%;">
+
+	<div class="wrapper" style="height: auto; min-height: 100%;">
+
+		<header class="main-header" th:insert="~{navbar}"></header>
+
+		<div class="content-wrapper" style="position: relative; min-height: 600px;">
+			<section style="padding: 0px;" class="content container-fluid">
+				<div class="row">
+					<div style="position:absolute;left:0;height:100%;width:100%;margin:0;overflow:hidden;padding:0;" id="cesiumContainer">
+					</div>
+				</div>
+			</section>
+		</div>
+		
+				
+		<aside class="control-sidebar control-sidebar-light" th:insert="~{controlsidebar}"></aside>
+		<div class="control-sidebar-bg"></div>
+
+
+		<!-- Main Footer -->
+
+		<footer class="main-footer" style="height: 44px; padding: 0px 10px 0px 10px; background-color: #222d32;">
+
+			<table id="tableFooter" style="width: 100%; cursor: pointer">
+				<tr>
+					<td>by Carlos Magno Abreu</td>
+
+					<td style="width: 40px">Foo</td>
+					<td style="width: 70px"></td>
+					<td style="width: 70px"></td>
+				</tr>
+				<tr>
+					<td>magno.mabreu@gmail.com</td>
+					<td style="width: 40px">Bar</td>
+					<td style="width: 70px"></td>
+					<td style="width: 70px"></td>
+				</tr>
+			</table>
+		</footer>
+
+
+	</div>
+
+
+	
+	
+	<!-- jQuery 3 -->
+	<script src="/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script	src="/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="/adminlte/dist/js/adminlte.min.js"></script>
+	<script src="/common/websocket/sockjs.min.js"></script>
+	<script src="/common/websocket/stomp.min.js"></script>
+	<script src="/cesium/Cesium.js"></script>
+	<script src="/common/script.js"></script>
+
+</body>
+
+</html>
